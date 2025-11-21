@@ -1,0 +1,22 @@
+package JavaCourse.Collection.Map.HashMap;
+
+import java.util.HashMap;
+
+public class PrintkKeyAndValues {
+    public static void main(String[] args) {
+        HashMap<String, String> capitalCities = new HashMap<>();
+
+        capitalCities.put("England", "London");
+        capitalCities.put("India", "New Dehli");
+        capitalCities.put("Austria", "Wien");
+        capitalCities.put("Norway", "Oslo");
+        capitalCities.put("Norway", "Oslo"); // Duplicate ignored
+        capitalCities.put("USA", "Washington DC");
+
+        for (String i : capitalCities.keySet()) {
+            System.out.println("key: " + i + " And value: " + capitalCities.get(i));
+        }
+
+    }
+}
+
